@@ -29,13 +29,13 @@
 //      x < n1 ? n1 : x
 //      x > n2 ? n2 : x
 
-const values = [1, 2, 3, 4, 5, 6];
-// const n1 = 2;
-// const n2 = 5;
+const values = [1, 2, 3, 4, 5, 6, 3, 7];
+const n1 = 2;
+const n2 = 5;
 
-// let x = 3;
+let x = 3;
 
-function between(n1, n2, x) {
+function getBetween(n1, n2, x) {
   //   return (x < n1 ? n1 : x) > n2 ? n2 : x;
 
   x = x < n1 ? n1 : x;
@@ -44,12 +44,24 @@ function between(n1, n2, x) {
   //   return x < n1 ? n1 : x;
 }
 
+const res = values.map((item, i, arr) => getBetween(2, 5, item));
+// const res = values.map(x => {
+//   x = x < n1 ? n1 : x;
+//   x = x > n2 ? n2 : x;
+//   return x;
+// });
+
+console.log(res);
+
 // values.forEach()
 
-// console.log(between(n1, n2, x));
-// console.log(between(n1, n2, 1));
-// console.log(between(n1, n2, 10));
 
-console.log(between(2, 6, 3));
-console.log(between(2, 6, 1));
-console.log(between(2, 6, 10));
+// console.log(getBetween(n1, n2, x));
+
+// console.log(getBetween(n1, n2, x));
+// console.log(getBetween(n1, n2, 1));
+// console.log(getBetween(n1, n2, 10));
+
+// console.log(getBetween(2, 6, 3));
+// console.log(getBetween(2, 6, 1));
+// console.log(getBetween(2, 6, 10));
