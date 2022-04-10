@@ -1,3 +1,73 @@
+@charset "UTF-8";
+.mainbox {
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  margin: 16px;
+  outline: 2px solid red;
+}
+
+.rect {
+  width: 600px;
+  height: 400px;
+  margin: 16px;
+}
+
+.gradient {
+  display: block;
+  margin: 30px auto;
+  font-size: 2rem;
+  width: 100px;
+}
+
+.test1 {
+  /* устанавливаем высоту элемента */
+  /* градиент размещается с отрицательным углом 45 градусов */
+  background-image: repeating-linear-gradient(180deg, #f00, #f00 33%, #0f0 33%, #0f0 66%, #00f 66%, #00f 100%);
+}
+
+.test2 {
+  /* градиент размещается с положительным углом 45 градусов */
+  background-image: repeating-linear-gradient(-45deg, transparent 0 20px, magenta 20px 40px), repeating-linear-gradient(45deg, transparent 0 20px, cyan 20px 40px), repeating-linear-gradient(red, yellow);
+}
+
+.testLines {
+  width: 750px;
+  height: auto;
+  margin: 0;
+  padding: 10px 32px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background: -webkit-linear-gradient(180deg, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.relative {
+  width: 25%;
+  margin: 50px auto 0;
+}
+
+.r__item {
+  width: 100px;
+  background-color: aqua;
+}
+
 img {
   display: block;
 }
@@ -76,5 +146,17 @@ img {
 .thumb:hover .modal__text {
   -webkit-transform: perspective(400px) rotateY(180deg);
           transform: perspective(400px) rotateY(180deg);
+}
+
+.list {
+  background-color: aqua;
+  list-style: none;
+  font-size: 3rem;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list__item {
+  border-bottom: 1px red;
 }
 /*# sourceMappingURL=main.css.map */

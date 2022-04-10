@@ -1,0 +1,91 @@
+.mainbox {
+  margin: 0 auto;
+  padding: 0 32px;
+
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  margin: 16px;
+  outline: 2px solid red;
+}
+.rect {
+  width: 600px;
+  height: 400px;
+  margin: 16px;
+  // outline: 2px dotted green;
+}
+
+.gradient {
+  display: block;
+  margin: 30px auto;
+  font-size: 2rem;
+  width: 100px;
+}
+
+.test1 {
+  /* устанавливаем высоту элемента */
+  // height: 135px;
+  /* градиент размещается с отрицательным углом 45 градусов */
+  // background-image: repeating-linear-gradient(
+  //   -45deg,
+  //   #777 20px,
+  //   #888 40px,
+  //   hsla(300, 50%, 50%, 0.9) 50px
+  // );
+
+  // background-image: repeating-linear-gradient(180deg, #f00 20px, #0f0 40px, #00f 60px);
+  // background-image: repeating-linear-gradient(180deg, #f00 20%, #0f0 40%, #00f 60%);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    #f00,
+    #f00 33%,
+    #0f0 33%,
+    #0f0 66%,
+    #00f 66%,
+    #00f 100%
+  );
+}
+
+.test2 {
+  /* градиент размещается с положительным углом 45 градусов */
+  //   background-image: repeating-linear-gradient(45deg, yellow 0, yellow 10px, #000 10px, #000 20px);
+
+  // background: repeating-linear-gradient(transparent, #4d9f0c 40px),
+  //   repeating-linear-gradient(0.25turn, transparent, #3f87a6 20px);
+
+  // background-image: repeating-linear-gradient(0deg, #fff 0, #fff 40px, #000 41px, #000 42px),
+  //   repeating-linear-gradient(90deg, transparent 0, transparent 40px, #000 41px, #000 42px);
+
+  // background-image: repeating-linear-gradient(-45deg, transparent 0 20px, black 20px 40px),
+  //   repeating-linear-gradient(-45deg, transparent 0 20px, black 20px 40px);
+
+  background-image: repeating-linear-gradient(-45deg, transparent 0 20px, magenta 20px 40px),
+    repeating-linear-gradient(45deg, transparent 0 20px, cyan 20px 40px),
+    repeating-linear-gradient(red, yellow);
+}
+
+.testLines {
+  width: 750px;
+  height: auto;
+  margin: 0;
+  padding: 10px 32px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.86;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  background: -webkit-linear-gradient(180deg, #eee, #333);
+  // -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

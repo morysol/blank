@@ -1,3 +1,6 @@
+@import './sub/gradient';
+@import './sub/relative';
+
 img {
   display: block;
 }
@@ -80,4 +83,15 @@ img {
   &:hover .modal__text {
     transform: perspective(400px) rotateY(180deg);
   }
+}
+
+.list {
+  background-color: aqua;
+  list-style: none;
+  font-size: 3rem;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list__item {
+  border-bottom: 1px red;
 }
